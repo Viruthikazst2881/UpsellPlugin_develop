@@ -1,0 +1,48 @@
+.upsell-admin-header { align-items: center; border-bottom: 2px solid #f0f0f0; display: flex; justify-content: space-between; margin: 0 0 24px; padding: 0 0 16px; }
+.upsell-admin-header__brand { align-items: center; display: flex; gap: 10px; }
+.upsell-admin-header__logo { font-size: 24px; line-height: 1; }
+.upsell-admin-header__title { color: #1d2327; font-size: 20px; font-weight: 700; margin: 0; }
+.upsell-admin-header__version { background: #f0f0f0; border-radius: 3px; color: #aaa; display: inline-block; font-size: 11px; margin-top: 4px; padding: 1px 6px; }
+.upsell-admin-header__nav { display: flex; gap: 4px; }
+.upsell-admin-header__tab { background: none; border: 1px solid #ddd; border-radius: 20px; color: #555; display: inline-block; font-size: 13px; padding: 7px 18px; text-decoration: none; transition: all .15s; }
+.upsell-admin-header__tab:hover { background: #135e96; color: #fff; }
+.upsell-admin-header__tab--active { background: #2271b1; border-color: #2271b1; color: #fff; }
+.upsell-settings-form { background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 1px 1px rgba(0,0,0,0.04); }
+.upsell-settings-form .form-table { margin-top: 20px; }
+.upsell-settings-form .form-table th { width: 200px; font-weight: 600; }
+.upsell-settings-form .form-table td { padding: 15px 0; }
+.upsell-settings-form .description { display: block; margin-top: 8px; color: #666; font-size: 12px; }
+.upsell-checkbox-group { display: flex; flex-direction: column; gap: 10px; }
+.upsell-checkbox-group label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-weight: normal; margin: 0; }
+.upsell-checkbox-group input[type="checkbox"] { margin: 0; cursor: pointer; }
+.upsell-checkbox-group--stacked { align-items: flex-start; }
+.upsell-checkbox-group--stacked label { display: flex; width: 100%; }
+.upsell-search-picker { max-width: 520px; }
+.upsell-search-picker__input { width: 100%; margin-bottom: 10px; }
+.upsell-search-picker__list { max-height: 220px; overflow: auto; border: 1px solid #dcdcde; border-radius: 6px; background: #fff; padding: 8px 10px; }
+.upsell-search-picker__item { display: flex; align-items: flex-start; gap: 8px; padding: 6px 0; margin: 0; font-weight: normal; }
+.upsell-search-picker__item.is-hidden, .upsell-product-picker__item.is-hidden, .upsell-product-picker__search-results.is-hidden, .upsell-search-picker__results.is-hidden, .upsell-product-picker__panel.is-hidden, .upsell-category-picker__item.is-hidden, .upsell-category-picker__products.is-hidden, .upsell-manual-condition-panel.is-hidden { display: none; }
+.upsell-search-picker__empty { color: #666; font-size: 12px; padding: 4px 0; }
+.upsell-product-picker { max-width: 760px; }
+.upsell-product-picker__tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+.upsell-product-picker__tab { border: 1px solid #dcdcde; border-radius: 6px; background: #fff; color: #1d2327; padding: 8px 14px; cursor: pointer; font-weight: 600; }
+.upsell-product-picker__tab.is-active { background: #2271b1; border-color: #2271b1; color: #fff; }
+.upsell-product-picker__panel { display: block; }
+.upsell-product-picker__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; max-height: 360px; overflow: auto; border: 1px solid #dcdcde; border-radius: 8px; background: #fff; padding: 12px; }
+.upsell-product-picker__item { position: relative; display: block; border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px; background: #fff; cursor: pointer; }
+.upsell-product-picker__item input { position: absolute; top: 8px; right: 8px; z-index: 2; }
+.upsell-product-picker__image { width: 100%; height: 96px; border-radius: 6px; overflow: hidden; background: #f6f7f7; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; }
+.upsell-product-picker__image img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.upsell-product-picker__name { font-size: 12px; font-weight: 600; color: #1d2327; line-height: 1.35; margin-bottom: 4px; }
+.upsell-product-picker__price { font-size: 12px; color: #2271b1; }
+.upsell-category-picker { display: grid; grid-template-columns: 220px 1fr; gap: 14px; align-items: start; }
+.upsell-category-picker__list { max-height: 360px; overflow: auto; border: 1px solid #dcdcde; border-radius: 8px; background: #fff; padding: 8px; }
+.upsell-category-picker__item { display: block; width: 100%; text-align: left; border: 1px solid transparent; background: #fff; border-radius: 6px; padding: 8px 10px; margin-bottom: 6px; cursor: pointer; }
+.upsell-category-picker__item.is-active { background: #e8f4fd; border-color: #2271b1; }
+.toggler-checkbox { position: relative; display: inline-block; width: 50px; height: 24px; }
+.toggler-checkbox input { opacity: 0; width: 0; height: 0; }
+.toggler-slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 24px; }
+.toggler-slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+.toggler-checkbox input:checked + .toggler-slider { background-color: #2271b1; }
+.toggler-checkbox input:checked + .toggler-slider:before { transform: translateX(26px); }
+@media (max-width: 900px) { .upsell-admin-header { align-items: flex-start; flex-direction: column; gap: 12px; } .upsell-category-picker { grid-template-columns: 1fr; } }
